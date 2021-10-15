@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="monetization" content="$ilp.uphold.com/LJmbPn7WD4JB">
+
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Web Monetization</title>
+
+	<script>
+		if (document.monetization) {
+			document.monetization.addEventListener('monetizationstart', () => {
+				document.getElementById("paid").classList.remove("hidden");
+			})
+
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<main class="container">
+		<h1>Nature</h1>
+
+		<section class="free-images">
+			<h2>Free Images</h2>
+			<section class="images">
+				<article>
+					<img src="images/free.jpg" alt="" />
+				</article>
+				<article>
+					<img src="images/free1.jpg" alt="" />
+				</article>
+				<article>
+					<img src="images/free2.jpg" alt="" />
+				</article>
+			</section>
+		</section>
+
+		<!-- Monetized content -->
+		<section id="paid" class="paid-images hidden">
+			<h2>Thank you for subscribing, exclusive content below just for you!</h2>
+			<section class="images">
+				<article>
+					<img src="images/paid.jpg" alt="" />
+				</article>
+				<article>
+					<img src="images/paid1.jpg" alt="" />
+				</article>
+			</section>
+
+	</main>
+</body>
+
+</html>
